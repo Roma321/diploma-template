@@ -41,6 +41,8 @@
 }
 
 .searchbox_image {
+    background: url(img/search.png) no-repeat;
+    /*Будет другая картинка*/
     width: 200px;
     height: 30px;
     border-radius: 15px;
