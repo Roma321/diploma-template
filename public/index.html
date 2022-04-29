@@ -1,28 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="ru">
+
+<head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
+    <link rel="icon" href="img/icon.png" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <meta name="viewport " content="width=device-width, initial-scale=1 " />
+    <meta name="theme-color " content="#000000 " />
+    <meta name="description " content="Web site created using create-react-app " />
     <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
+      Notice the use of %PUBLIC_URL% in the tags above. 
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      Unlike "/favicon.ico " or "favicon.ico ", "%PUBLIC_URL%/favicon.ico " will
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
+    <title>Spyortify</title>
+</head>
+
+<body class="app">
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -33,5 +32,153 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+
+    <header class="header">
+        <a>
+            <img src="img/spotify_emblem_small.png" height="50px" width="50px" alt="Spyortify emblem">
+        </a>
+        <div class="app_title">
+            Spyortify
+        </div>
+        <a href=#>
+            Мои плейлисты
+            </a>
+        <a href=#>
+            Мои исполнители
+        </a>
+        <a href=#>
+            Любимые треки
+        </a>
+        <form action="" method="get" class="header_searchbox">
+            <input type="search" placeholder="Поиск" class="searchbox_image" />
+        </form>
+        <div>
+            <img class="user_img" src="img/anonymous-user.png" alt="User image" height="40px">
+        </div>
+    </header>
+    <aside class="accordion">
+        <ul class="accordion_ul">
+            <li class="accordion_ul_li">
+                <a>Подкасты</a>
+            </li>
+            <li class="accordion_ul_li"><a>Рекомендации</a>
+                <ul class="accordion_ul_li_ul">
+                    <li class="accordion_ul_li_ul_li">Рекомендация 1</li>
+                    <li class="accordion_ul_li_ul_li"> Рекомендация 2</li>
+                    <li class="accordion_ul_li_ul_li">Рекомендация 3</li>
+                </ul>
+            </li>
+            <li class="accordion_ul_li">
+                Недавно прослушано
+                <ul class="accordion_ul_li_ul">
+                    <li class="accordion_ul_li_ul_li">Трек 1</li>
+                    <li class="accordion_ul_li_ul_li">Трек 2</li>
+                    <li class="accordion_ul_li_ul_li"> Трек 3</li>
+                    <li class="accordion_ul_li_ul_li">Трек 4</li>
+                    <li class="accordion_ul_li_ul_li">Трек 5</li>
+                </ul>
+            </li>
+            <li class="accordion_ul_li">Ещё</li>
+        </ul>
+    </aside>
+    <main>
+        <div class=" main ">
+            <div class="tracks_header ">Трек</div>
+            <div class="track selected_track ">
+                <img src="img/pause.png " alt="pause " width="20px " height="20px " class="track_image ">
+                <div>Alice Cooper — Poison</div>
+                <div class="time_label ">0:05</div>
+            </div>
+            <div class="track ">
+                <img src="img/blindandfrozen.jpg " alt="berserker album " width="20px " height="20px " class="track_image ">
+                <div>Beast in Black — Blind and Frozen</div>
+                <div class="time_label ">5:04</div>
+            </div>
+            <div class="track ">
+                <img src="img/Depeche_Mode.png " alt=" " width="20px " height="20px " class="track_image ">
+                <div>Depeche Mode — Personal Jesus</div>
+                <div class="time_label ">3:44</div>
+            </div>
+            <div class="track ">
+                <img src="img/schwarzerengel.jpg " alt=" " width="20px " height="20px " class="track_image ">
+                <div>Schwarzer Engel — Paradies</div>
+                <div class="time_label ">4:11</div>
+            </div>
+            <div class="track ">
+                <img src="img/woodscream.jpg " alt=" " width="20px " height="20px " class="track_image ">
+                <div>Woodscream — Алан</div>
+                <div class="time_label ">2:59</div>
+            </div>
+            <div class="track ">
+                <img src="img/epidemia.jpg " alt=" " width="20px " height="20px " class="track_image ">
+                <div>Эпидемия — Корона и штурвал</div>
+                <div class="time_label ">5:02</div>
+            </div>
+            <div class="track ">
+                <img src="img/lotl.jpg " alt=" " width="20px " height="20px " class="track_image ">
+                <div>Lord of the Lost — 2000 Years a Pyre</div>
+                <div class="time_label ">4:21</div>
+            </div>
+            <div class="track ">
+                <img src="img/ludovicotechnique.jpg " alt=" " width="20px " height="20px " class="track_image ">
+                <div>Ludovico Technique — I Was</div>
+                <div class="time_label ">4:18</div>
+            </div>
+            <div class="track ">
+                <img src="img/bobmarley.jpg " alt=" " width="20px " height="20px " class="track_image ">
+                <div>Bob Marley & The Wailer — Could You Be Loved</div>
+                <div class="time_label ">3:57</div>
+            </div>
+            <div class="track ">
+                <img src="img/kipelov.jpg " alt=" " width="20px " height="20px " class="track_image ">
+                <div>Кипелов — Вавилон</div>
+                <div class="time_label ">5:45</div>
+            </div>
+        </div>
+
+        <div class="mixes_block ">
+            <div class="mixes_header ">
+                Миксы дня
+            </div>
+            <div class="mixes ">
+                <div class="mix ">
+                    <img src="img/gradient_blue.jpg " alt="mix image " width="150px " height=150px>
+                    <div>Микс дня 1</div>
+                </div>
+                <div class="mix ">
+                    <img src="img/gradient_yellow.jpg " alt="mix image " width="150px " height=150px>
+
+                    <div>Микс дня 2</div>
+                </div>
+                <div class="mix ">
+                    <img src="img/gradient_purple.jpg " alt="mix image " width="150px " height=150px>
+                    <div>Микс дня 3</div>
+                </div>
+                <div class="mix ">
+                    <img src="img/gradient_green.jpg " alt="mix image " width="150px " height=150px>
+                    <div>Микс дня 4</div>
+                </div>
+                <div class="mix ">
+                    <img src="img/gradient_orange.jpg " alt="mix image " width="150px " height=150px>
+                    <div>Микс дня 5</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer ">
+        <div class="contact ">
+            <div>Телефон</div>
+            <div>+79807036130</div>
+        </div>
+        <div class="contact ">
+            <div>@-mail</div>
+            <div>mamaew.roma2000@yandex.ru</div>
+        </div>
+        <div class="contact ">
+            <div>Telegram</div>
+            <div>https://t.me/Real_R0MA</div>
+        </div>
+    </footer>
+</body>
+
 </html>

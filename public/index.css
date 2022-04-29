@@ -41,6 +41,7 @@
 }
 
 .searchbox_image {
+    background: url(img/search.png) no-repeat;
     width: 200px;
     height: 30px;
     border-radius: 15px;
@@ -87,7 +88,7 @@
 }
 
 .tracks_header {
-    font-size: 150%;
+    font-size: 22px;
     padding-left: 20px;
 }
 
@@ -125,7 +126,7 @@
 }
 
 .mixes_header {
-    font-size: 180%;
+    font-size: 28px;
     margin: 10px;
 }
 
@@ -147,4 +148,5 @@
 
 .app_title {
     font-size: 28px;
+    padding: 5px 20px;
 }
