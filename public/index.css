@@ -42,7 +42,6 @@
 
 .searchbox_image {
     background: url(img/search.png) no-repeat;
-    /*Будет другая картинка*/
     width: 200px;
     height: 30px;
     border-radius: 15px;
@@ -89,7 +88,7 @@
 }
 
 .tracks_header {
-    font-size: 150%;
+    font-size: 22px;
     padding-left: 20px;
 }
 
@@ -99,21 +98,21 @@
 
 .accordion_ul {
     list-style-type: none;
-    font-size: 120%;
+    font-size: 20px;
     margin-top: 10%;
 }
 
-.accordion_ul li {
+.accordion_ul_li {
     padding: 5px 0px;
 }
 
-.accordion_ul li ul {
+.accordion_ul_li_ul {
     list-style-type: none;
     padding-left: 10px;
-    font-size: 80%;
+    font-size: 15px;
 }
 
-.accordion_ul li ul li {
+.accordion_ul_li_ul_li {
     padding: 2px 0px;
 }
 
@@ -127,7 +126,7 @@
 }
 
 .mixes_header {
-    font-size: 180%;
+    font-size: 28px;
     margin: 10px;
 }
 
@@ -145,4 +144,9 @@
 
 .contact {
     margin: 5px;
+}
+
+.app_title {
+    font-size: 28px;
+    padding: 5px 20px;
 }
