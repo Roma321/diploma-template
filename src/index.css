@@ -41,6 +41,7 @@
 }
 
 .searchbox_image {
+    background: url(img/search.png) no-repeat;
     width: 200px;
     height: 30px;
     border-radius: 15px;
@@ -74,6 +75,7 @@
 .track {
     display: flex;
     padding: 5px;
+    cursor: pointer;
     border-bottom: rgb(84, 102, 84) solid 1px;
 }
 
@@ -87,7 +89,7 @@
 }
 
 .tracks_header {
-    font-size: 150%;
+    font-size: 22px;
     padding-left: 20px;
 }
 
@@ -113,6 +115,7 @@
 
 .accordion_ul_li_ul_li {
     padding: 2px 0px;
+    cursor: pointer;
 }
 
 .mixes {
@@ -125,7 +128,7 @@
 }
 
 .mixes_header {
-    font-size: 180%;
+    font-size: 28px;
     margin: 10px;
 }
 
@@ -147,4 +150,5 @@
 
 .app_title {
     font-size: 28px;
+    padding: 5px 20px;
 }

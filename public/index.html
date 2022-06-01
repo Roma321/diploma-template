@@ -6,7 +6,7 @@
     <link rel="icon" href="img/icon.png" />
     <link rel="stylesheet" type="text/css" href="index.css" />
     <meta name="viewport " content="width=device-width, initial-scale=1 " />
-    <meta name="theme-color " content="#000000 " />
+    <meta name="theme-color " content="#000000" />
     <meta name="description " content="Web site created using create-react-app " />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above. 
@@ -61,19 +61,19 @@
             <li class="accordion_ul_li">
                 <a>Подкасты</a>
             </li>
-            <li class="accordion_ul_li"><a>Рекомендации</a>
-                <ul class="accordion_ul_li_ul">
-                    <li class="accordion_ul_li_ul_li">Рекомендация 1</li>
-                    <li class="accordion_ul_li_ul_li"> Рекомендация 2</li>
-                    <li class="accordion_ul_li_ul_li">Рекомендация 3</li>
+            <li class="accordion_ul_li"><a>Плейлисты</a>
+                <ul class="accordion_ul_li_ul" id="playlists_list">
+                    <li class="accordion_ul_li_ul_li">Плейлист 1</li>
+                    <li class="accordion_ul_li_ul_li"> Плейлист 2</li>
+                    <li class="accordion_ul_li_ul_li">Плейлист 3</li>
                 </ul>
             </li>
             <li class="accordion_ul_li">
                 Недавно прослушано
-                <ul class="accordion_ul_li_ul">
+                <ul class="accordion_ul_li_ul" id="recent_tracks">
                     <li class="accordion_ul_li_ul_li">Трек 1</li>
                     <li class="accordion_ul_li_ul_li">Трек 2</li>
-                    <li class="accordion_ul_li_ul_li"> Трек 3</li>
+                    <li class="accordion_ul_li_ul_li">Трек 3</li>
                     <li class="accordion_ul_li_ul_li">Трек 4</li>
                     <li class="accordion_ul_li_ul_li">Трек 5</li>
                 </ul>
@@ -85,52 +85,52 @@
         <div class=" main ">
             <div class="tracks_header ">Трек</div>
             <div class="track selected_track ">
-                <img src="img/pause.png " alt="pause " width="20px " height="20px " class="track_image ">
+                <img src="pause.png " alt="pause " width="20px " height="20px " class="track_image ">
                 <div>Alice Cooper — Poison</div>
                 <div class="time_label ">0:05</div>
             </div>
             <div class="track ">
-                <img src="img/blindandfrozen.jpg " alt="berserker album " width="20px " height="20px " class="track_image ">
+                <img src="blindandfrozen.jpg " alt="berserker album " width="20px " height="20px " class="track_image ">
                 <div>Beast in Black — Blind and Frozen</div>
                 <div class="time_label ">5:04</div>
             </div>
             <div class="track ">
-                <img src="img/Depeche_Mode.png " alt=" " width="20px " height="20px " class="track_image ">
+                <img src="Depeche_Mode.png " alt=" " width="20px " height="20px " class="track_image ">
                 <div>Depeche Mode — Personal Jesus</div>
                 <div class="time_label ">3:44</div>
             </div>
             <div class="track ">
-                <img src="img/schwarzerengel.jpg " alt=" " width="20px " height="20px " class="track_image ">
+                <img src="schwarzerengel.jpg " alt=" " width="20px " height="20px " class="track_image ">
                 <div>Schwarzer Engel — Paradies</div>
                 <div class="time_label ">4:11</div>
             </div>
             <div class="track ">
-                <img src="img/woodscream.jpg " alt=" " width="20px " height="20px " class="track_image ">
+                <img src="woodscream.jpg " alt=" " width="20px " height="20px " class="track_image ">
                 <div>Woodscream — Алан</div>
                 <div class="time_label ">2:59</div>
             </div>
             <div class="track ">
-                <img src="img/epidemia.jpg " alt=" " width="20px " height="20px " class="track_image ">
+                <img src="epidemia.jpg " alt=" " width="20px " height="20px " class="track_image ">
                 <div>Эпидемия — Корона и штурвал</div>
                 <div class="time_label ">5:02</div>
             </div>
             <div class="track ">
-                <img src="img/lotl.jpg " alt=" " width="20px " height="20px " class="track_image ">
+                <img src="lotl.jpg " alt=" " width="20px " height="20px " class="track_image ">
                 <div>Lord of the Lost — 2000 Years a Pyre</div>
                 <div class="time_label ">4:21</div>
             </div>
             <div class="track ">
-                <img src="img/ludovicotechnique.jpg " alt=" " width="20px " height="20px " class="track_image ">
+                <img src="ludovicotechnique.jpg " alt=" " width="20px " height="20px " class="track_image ">
                 <div>Ludovico Technique — I Was</div>
                 <div class="time_label ">4:18</div>
             </div>
             <div class="track ">
-                <img src="img/bobmarley.jpg " alt=" " width="20px " height="20px " class="track_image ">
+                <img src="bobmarley.jpg " alt=" " width="20px " height="20px " class="track_image ">
                 <div>Bob Marley & The Wailer — Could You Be Loved</div>
                 <div class="time_label ">3:57</div>
             </div>
             <div class="track ">
-                <img src="img/kipelov.jpg " alt=" " width="20px " height="20px " class="track_image ">
+                <img src="kipelov.jpg " alt=" " width="20px " height="20px " class="track_image ">
                 <div>Кипелов — Вавилон</div>
                 <div class="time_label ">5:45</div>
             </div>
@@ -142,24 +142,24 @@
             </div>
             <div class="mixes ">
                 <div class="mix ">
-                    <img src="img/gradient_blue.jpg " alt="mix image " width="150px " height=150px>
+                    <img src="gradient_blue.jpg " alt="mix image " width="150px " height=150px>
                     <div>Микс дня 1</div>
                 </div>
                 <div class="mix ">
-                    <img src="img/gradient_yellow.jpg " alt="mix image " width="150px " height=150px>
+                    <img src="gradient_yellow.jpg " alt="mix image " width="150px " height=150px>
 
                     <div>Микс дня 2</div>
                 </div>
                 <div class="mix ">
-                    <img src="img/gradient_purple.jpg " alt="mix image " width="150px " height=150px>
+                    <img src="gradient_purple.jpg " alt="mix image " width="150px " height=150px>
                     <div>Микс дня 3</div>
                 </div>
                 <div class="mix ">
-                    <img src="img/gradient_green.jpg " alt="mix image " width="150px " height=150px>
+                    <img src="gradient_green.jpg " alt="mix image " width="150px " height=150px>
                     <div>Микс дня 4</div>
                 </div>
                 <div class="mix ">
-                    <img src="img/gradient_orange.jpg " alt="mix image " width="150px " height=150px>
+                    <img src="gradient_orange.jpg " alt="mix image " width="150px " height=150px>
                     <div>Микс дня 5</div>
                 </div>
             </div>
@@ -179,6 +179,7 @@
             <div>https://t.me/Real_R0MA</div>
         </div>
     </footer>
+    <script src="script.js" type="module"></script>
 </body>
 
 </html>

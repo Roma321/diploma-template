@@ -75,6 +75,7 @@
 .track {
     display: flex;
     padding: 5px;
+    cursor: pointer;
     border-bottom: rgb(84, 102, 84) solid 1px;
 }
 
@@ -114,6 +115,7 @@
 
 .accordion_ul_li_ul_li {
     padding: 2px 0px;
+    cursor: pointer;
 }
 
 .mixes {
