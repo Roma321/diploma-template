@@ -1,9 +1,11 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const cors = require("cors")
 const SpotifyWebApi = require('spotify-web-api-node');
 const router = express.Router();
 app.use('/', router);
+app.use(cors());
 app.use(express.static(__dirname + '/public/'));
 app.use(express.static(__dirname + '/public/img/'));
 
@@ -91,7 +93,8 @@ app.get('/callback', (req, res) => {
 app.get('/playlists', (req, res) => {
     (async() => {
         const result = await spotifyApi.getUserPlaylists();
-        res.send(result);
+        //console.log(result.body.items)
+        res.send(result.body.items.map(item => ({ id: item.id, name: item.name, uri: item.uri })));
     })().catch(e => {
         res.send({ error: true });
     });
@@ -109,16 +112,22 @@ app.get('/playlist_tracks', (req, res) => {
     (async() => {
         console.log(req.query.id)
         const a = await spotifyApi.getPlaylistTracks(req.query.id)
-        res.send(a)
+        res.send(a.body.items.map(item => ({
+            id: item.track.id,
+            name: item.track.name,
+            author: item.track.artists[0].name,
+            image: item.track.album.images[2].url,
+            duration: item.track.duration_ms
+        })))
     })().catch(e => {
-        res.send({ error: true, args: req.query });
+        res.send([]);
     });
 });
 
 app.get('/recent', (req, res) => {
     (async() => {
         const a = await spotifyApi.getMyRecentlyPlayedTracks({ limit: 10 })
-        res.send(a)
+        res.send(a.body.items.map(item => `${item.track.artists[0].name} — ${item.track.name}`))
     })().catch(e => {
         res.send({ error: true, args: req.query });
     });
