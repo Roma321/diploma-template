@@ -7,14 +7,15 @@ interface Props{
     selected:string
 }
 function Main(selected:Props){
-    const [tracks, setTracks]=React.useState([{id:"",name:"",image:"", author:"", duration:0}])
+    const [tracks, setTracks]=React.useState({toptracks:{track:[{artist:{name:""},name:"", playcount:'0',image:[{text:""}]}]}})
     useEffect(()=>{
-        fetch(`http://localhost:8888/playlist_tracks?id=${selected.selected}`).then(res => res.json()).then(setTracks)
+        fetch(`http://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&mbid=${selected.selected}&api_key=4502be27513bd0d1830b1cc9f97b4cc6&format=json`).then(res => res.json()).then(setTracks)
     },[selected.selected])
     return <div className="main">
                 <div className="tracks_header ">Трек</div>
-                {console.log(tracks)}
-                {tracks.map((item)=>{return <Track duration={item.duration} image={item.image} id={item.id} name = {item.name} author={item.author}/>})}
+                
+                {tracks.toptracks.track.map((item)=>{return <Track duration={Math.floor((Math.random() * 180000) + 170000)} image='img/gradient_yellow.jpg' id="" name = {item.name} author={item.artist.name}/>})}
+                
                 <MixesBlock/>
             </div>
 }
