@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    display: grid;
+    color: #FFF;
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: min-content auto min-content;
+    background-color: rgb(37, 37, 37);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: rgb(0, 10, 0);
+    display: flex;
+    grid-column: 1/3;
+    align-items: center;
+    border-bottom: rgb(100, 100, 100) solid 1px;
+    padding: 5px;
+}
+
+.header_searchbox {
+    margin-left: auto;
+}
+
+.header>a {
+    margin-left: 20px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.user_img {
+    border-radius: 15px;
+    border: #FFF solid;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.searchbox_image {
+    background: url(img/search.png) no-repeat;
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
+    padding: 6px;
+}
+
+.accordion {
+    background-color: rgb(20, 20, 20);
+    padding-left: 20px;
+}
+
+.footer {
+    grid-column: 1/3;
+    background-color: rgb(0, 10, 0);
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.main {
+    display: flex;
+    background-color: rgb(20, 20, 20);
+    flex-direction: column;
+    width: 70%;
+    padding: 10px;
+    margin-left: 10%;
+    margin-top: 5%;
+    height: min-content;
+}
+
+.track {
+    display: flex;
+    padding: 5px;
+    cursor: pointer;
+    border-bottom: rgb(84, 102, 84) solid 1px;
+}
+
+.time_label {
+    margin-left: auto;
+    font-weight: 100;
+}
+
+.track_image {
+    margin-right: 5px;
+}
+
+.tracks_header {
+    font-size: 22px;
+    padding-left: 20px;
+}
+
+.selected_track {
+    background-color: rgb(50, 50, 50);
+}
+
+.accordion_ul {
+    list-style-type: none;
+    font-size: 20px;
+    margin-top: 10%;
+}
+
+.accordion_ul_li {
+    padding: 5px 0px;
+}
+
+.accordion_ul_li_ul {
+    list-style-type: none;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.accordion_ul_li_ul_li {
+    padding: 2px 0px;
+    cursor: pointer;
+}
+
+.mixes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mixes_block {
+    margin: 3% 5%;
+}
+
+.mixes_header {
+    font-size: 28px;
+    margin: 10px;
+}
+
+.mix {
+    background-color: rgb(50, 50, 50);
+    padding: 10px 15px;
+    border: rgb(100, 100, 100) solid 1px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+}
+
+.mix:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+.contact {
+    margin: 5px;
+}
+
+.app_title {
+    font-size: 28px;
+    padding: 5px 20px;
+}

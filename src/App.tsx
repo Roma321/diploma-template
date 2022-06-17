@@ -1,23 +1,22 @@
 import React from 'react';
+import Aside from './Aside';
+import Footer from './Footer';
+import Header from './Header';
+import Main from './Main';
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <p>
-//           Edit <code>src/App.tsx</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
+function App() {
+ const [selectedPlaylist, setSelectedPlaylist]=React.useState("c8bc9ad3-1df2-4c9b-9cf7-cf6fc60441dc")
+ const updateData = (value: string) => {
+  setSelectedPlaylist(value)
+}
+ return (
+ <div className="app">
+   <Header/>
+   <Aside updateData={updateData}/>
+   <Main selected={selectedPlaylist}/>
+   <Footer/>
+  </div>
+  );
+ }
+ export default App;
+ 
